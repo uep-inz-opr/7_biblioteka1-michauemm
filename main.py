@@ -13,7 +13,7 @@ class Biblioteka:
             ile = str(self.lista_egzemplarzy).count(str(element))
             wystapienia = str(element,)
             self.lista_wystapien.append(f"{wystapienia}{ile})")
-        final_list = sort(list(set(self.lista_wystapien)))
+        final_list = sorted(list(set(self.lista_wystapien)))
         for element in final_list:
             print(element)
 
