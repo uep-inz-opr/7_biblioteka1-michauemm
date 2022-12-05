@@ -13,7 +13,7 @@ class Biblioteka:
             ile = str(self.lista_egzemplarzy).count(str(element))
             wystapienia = str(element,)
             self.lista_wystapien.append(f"{wystapienia}{ile})")
-        final_list = list(set(self.lista_wystapien))
+        final_list = sort(list(set(self.lista_wystapien)))
         for element in final_list:
             print(element)
 
@@ -24,7 +24,7 @@ class Ksiazka:
         self.autor = autor
 
     def __repr__(self):
-        return f"('{self.tytul.strip()}','{self.autor.strip()}',"
+        return f"('{self.tytul.strip()}', '{self.autor.strip()}', "
 
 # logic
 MojaBiblioteka = Biblioteka()
